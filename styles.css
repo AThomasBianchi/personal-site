@@ -1,0 +1,52 @@
+body {
+  /* text-align: center; */
+  margin: 0;
+}
+
+
+.nav {
+  text-align: left;
+}
+
+.nav__image {
+  display: none;
+}
+
+
+.main {
+  padding: 1em;
+}
+
+.main__image {
+  width: 100%;
+}
+
+
+
+
+
+@media all and (min-width: 768px) {
+
+  .nav {
+    display: flex;
+    height: 20%;
+    max-height: 50px;
+    width: 100%;
+    background-color: grey;
+    justify-content: flex-end;
+  }
+  
+  .nav__item {
+    display: block;
+    width: 10%;
+  }
+
+  .nav__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    align-self: flex-start;
+  }
+
+}
