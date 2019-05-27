@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AT Bianchi</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
 <body>
   <nav class="nav">
-    <a class="nav__item" href="#">Home</a>
-    <a class="nav__item" href="#">Blog</a>
     <a class="nav__item" href="#">About</a>
+    <a class="nav__item" href="#">Portfolio</a>
+    <a class="nav__item" href="#">Experience</a>
+    <a class="nav__item" href="#">Elsewhere</a>
 
     <img class="nav__image" src="tom.jpg" />
   </nav>
@@ -33,7 +35,7 @@
   </section>
 
   <section>
-    <h2>My work</h2>
+    <h2>Portfolio</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus dicta earum laborum quod dolores
       recusandae deleniti reprehenderit sapiente, nostrum minima voluptatem asperiores ullam fugiat! Veniam debitis
       maxime dolores pariatur?</p>
@@ -45,15 +47,29 @@
   </section>
 
   <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job__title">Front-end Developer</div>
+      <div class="job__employer">HTMA, inc.</div>
+      <div class="job__duration--present">May, 2018 - Present</div>
+      <div class="job__description">Built, maintained, and improved front-end code for personal finance web application.</div>
+    </div>
+  </section>
+
+  <section>
     <h2>Elsewhere</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sit, omnis earum culpa, eum quos repellendus
-      recusandae et esse labore excepturi repellat nemo minus, necessitatibus qui placeat doloribus quod similique.</p>
+    <div>Github</div>
+    <div>Twitter</div>
+    <div>Strava</div>
   </section>
 
   <section>
     <h2>Style me</h2>
-    <button>Brutalist</button>
-    <button></button>
+    <div>
+      <button class='btn js__brutalist'>Brutalist</button>
+      <button class='btn'>Dark mode</button>
+      <button class='btn'>Original</button>
+    </div>
   </section>
 
 

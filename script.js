@@ -1,16 +1,19 @@
 (function() {
 
+    /*
+     * Movile Navigation Collapse
+     */
+
     window.onscroll = () => {checkScroll()};
-    const height = document.documentElement.clientHeight;
 
     function checkScroll() {
+        const height = document.documentElement.clientHeight;
         let scrollHeight = document.documentElement.scrollTop;
         if (scrollHeight > height) {
             freezeNav();
         } else {
             unfreezeNav();
         }
-
     }
 
     function freezeNav() {
@@ -21,6 +24,38 @@
     function unfreezeNav() {
         document.querySelector('.nav').classList.remove('nav--sticky');
         document.querySelector('.about').classList.remove('about--scrolled');
+    }
+
+    /*
+     * Style Buttons
+     */
+    const buttons = document.querySelectorAll('.btn');
+    const brutalist = document.querySelector('.js__brutalist');
+
+    buttons.forEach( (button) => {
+        button.addEventListener('click', (e) => {
+            addClickedState(e.target);
+        });
+    })
+
+    // brutalist.onclick = (e) => {
+        
+    //     console.log(e)
+    //     addClickedState(e.target)
+    // }
+
+    function change_style(target) {
+        console.log(target);
+    };
+
+    function addClickedState(target) {
+        const active = document.querySelectorAll('.btn--active');
+        if (active.length > 0) {
+            active.forEach((each) => {
+                each.classList.remove('btn--active');
+            });
+        }
+        target.classList.add('btn--active');
     }
 
 })();
