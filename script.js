@@ -18,12 +18,12 @@
 
     function freezeNav() {
         document.querySelector('.nav').classList.add('nav--sticky');
-        document.querySelector('.about').classList.add('about--scrolled');
+        document.querySelector('.main').classList.add('main--scrolled');
     }
 
     function unfreezeNav() {
         document.querySelector('.nav').classList.remove('nav--sticky');
-        document.querySelector('.about').classList.remove('about--scrolled');
+        document.querySelector('.main').classList.remove('main--scrolled');
     }
 
     /*

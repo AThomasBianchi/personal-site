@@ -93,7 +93,7 @@ h1, h2 {
 
 
 
-.about--scrolled {
+.main--scrolled {
   margin-top:100px;
 } 
 
@@ -114,33 +114,14 @@ h1, h2 {
 
 @media all and (min-width: 768px) {
 
-
-
-  .nav {
-    display: flex;
-    height: 20%;
-    max-height: 50px;
-    width: 100%;
-    background-color: grey;
-    justify-content: flex-end;
-  }
-  
-  .nav__item {
-    display: block;
-    width: 10%;
-  }
-
-  .nav__image {
-    display: block;
-    height: 100%;
-    width: 100%;
-    max-width: 50px;
-    align-self: flex-start;
-  }
+ 
+  /*
+   * Desktop landing
+   */
 
   .landing {
     display: grid;
-    grid-template-columns: 10% 1fr 2fr 10%;
+    grid-template-columns: 10% 1fr 1.5fr 10%;
     grid-template-rows: 10% 1fr 1fr 10%;  
   }
 
@@ -149,6 +130,7 @@ h1, h2 {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
+    align-self: center;
   }
 
   .landing__title {
@@ -168,5 +150,95 @@ h1, h2 {
     justify-self: start;
     align-self: start;
   }
+
+
+  /*
+   * Desktop Nav
+   */ 
+
+  .nav {
+    display: flex;
+    /* height: 20%; */
+    /* max-height: 50px; */
+    width: 100%;
+    background-color: grey;
+    justify-content: flex-end;
+  }
+
+  .nav__item {
+    display: block;
+    width: 10%;
+  }
+
+  .nav__image {
+    display: none;
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    align-self: flex-start;
+  }
+
+
+  /* 
+   * Desktop main
+   */
+
+  .main {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 10% repeat(4, 1fr) 10%;
+    grid-template-rows: repeat(4, 50vh);
+  }
+
+  .main--scrolled {
+    margin-top: 150px;
+  }
+
+  .portfolio {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    height: 100%;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .portfolio__text-container {
+    grid-column: 1 / 2;
+  }
+
+  .portfolio__items-container {
+    grid-column: 2 / span 3;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .about {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+  }
+
+  .links {
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1;
+  }
+
+  .experience {
+    grid-column: 2 / span 4;
+    grid-row: 3 / span 1;
+  }
+
+  .styles {
+    grid-column: 2 / span 4;
+    grid-row: 4 / span 1;
+  }
+
+
 
 }
