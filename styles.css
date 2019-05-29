@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
 .image {
@@ -94,14 +94,18 @@ h1, h2 {
 
 
 .main--scrolled {
-  margin-top:100px;
+  margin-top: 100px;
 } 
 
 
-.orange, .blue, .green {
-  width: 100%;
+.portfolio__items-container {
   height: 100%;
-  height: 300px;
+}
+
+.portfolio__item {
+  width: 100%;
+  max-height: 100%;
+  min-height: 200px;
 }
 
 .orange { background-color: orange;}
@@ -112,7 +116,22 @@ h1, h2 {
 
 
 
-@media all and (min-width: 768px) {
+.links__link-container {
+  display: flex;
+  justify-content: space-evenly
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+
+  /*
+   * Desktop defaults
+   */
+
+
 
  
   /*
@@ -150,6 +169,63 @@ h1, h2 {
     justify-self: start;
     align-self: start;
   }
+
+
+
+  /*
+   ! Albert Thomas Display
+  .a {
+    background-color: #fff;
+    display: inline-block;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+
+  .lbert {
+    color: red;
+    display: inline-block;
+    transition: all 1s ease;
+
+  }
+
+  .lbert--moved {
+    transform: translateX(-56px);
+    z-index: -1;
+  }
+
+  .t {
+    background-color: #fff;
+    display: inline-block;
+    transition: all 1s ease;
+    z-index: 0;
+  }
+
+  .t--moved {
+    background-color: #fff;
+    transform: translateX(-62px);
+  }
+
+  .homas {
+    display: inline-block;
+    color: green;
+    transition: all 1s ease;
+  }
+
+  .homas--moved {
+    transform: translateX(-140px);
+    z-index: -1;
+  }
+
+  .bianchi {
+    background-color: #fff;
+    display: inline-block;
+    transition: all 1s ease;
+  }
+
+  .bianchi--moved {
+    transform: translateX(-137px);
+  }
+  */
 
 
   /*
@@ -218,6 +294,10 @@ h1, h2 {
     flex-direction: row;
   }
 
+  .portfolio__item {
+    margin: 10px;
+  }
+
 
   .about {
     grid-column: 2 / span 2;
@@ -228,6 +308,8 @@ h1, h2 {
     grid-column: 4 / span 2;
     grid-row: 2 / span 1;
   }
+
+
 
   .experience {
     grid-column: 2 / span 4;

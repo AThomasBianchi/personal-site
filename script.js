@@ -58,4 +58,28 @@
         target.classList.add('btn--active');
     }
 
+    /*
+     ! Albert Thomas Stuff
+    const name = document.querySelector('.js__lbert');
+
+    name.onclick = () => {
+        if (document.querySelector('.lbert').classList.contains('lbert--moved')) {
+            document.querySelector('.a').classList.remove('a--moved');
+            document.querySelector('.lbert').classList.remove('lbert--moved');
+            document.querySelector('.t').classList.remove('t--moved');
+            document.querySelector('.homas').classList.remove('homas--moved');
+            document.querySelector('.bianchi').classList.remove('bianchi--moved');
+        } else {
+            document.querySelector('.a').classList.add('a--moved');
+            document.querySelector('.lbert').classList.add('lbert--moved');
+            document.querySelector('.t').classList.add('t--moved');
+            document.querySelector('.homas').classList.add('homas--moved');
+            document.querySelector('.bianchi').classList.add('bianchi--moved');
+        }
+
+
+        console.log('click');
+    }
+    */
+
 })();
