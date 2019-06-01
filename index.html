@@ -28,11 +28,11 @@
 
   <main class="main">
     <section class="about">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, repudiandae quisquam similique deserunt
-        commodi ipsum inventore. Eius, nesciunt. Quas cum quod minus error! Deserunt, expedita eius consequatur
-        voluptatum
-        nesciunt tenetur.</p>
+      <h2 class="about__title">About Me</h2>
+      <p class="about__text">I am a front-end developer based in Ann Arbor, Michigan. 
+        I'm passionate about making the web work for everyone. 
+        When I'm not developing, I can be found gardening, running, or reading short stories.
+      </p>
     </section>
 
     <section class="portfolio">
@@ -52,16 +52,29 @@
     <section class="experience">
       <h2>Experience</h2>
       <div class="job">
-        <div class="job__title">Front-end Developer</div>
-        <div class="job__employer">HTMA, inc.</div>
-        <div class="job__duration--present">May, 2018 - Present</div>
+        <h3 class="job__title">Web Developer</h3>
+        <div class="job__employer"><a href="#">HTMA, inc.</a></div>
+        <div class="job__duration--present">May, 2018&ndash;Present</div>
         <div class="job__description">Built, maintained, and improved front-end code for personal finance web
           application.</div>
+      </div>
+      <div class="job job--class">
+        <h3 class="job__title">Front-end Bootcamp</h3>
+        <div class="job__employer"><a href="#">Grand Circus, Detroit</a></div>
+        <div class="job__duration--present">January 2018&ndash;March 2018</div>
+        <div class="job__description">Group won demo day </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2 class="skills__title">Skills</h2>
+      <div class="skills__chart">
+
       </div>
     </section>
 
     <section class="links">
-      <h2>Elsewhere</h2>
+      <h2 class="links__title">Elsewhere</h2>
       <div class="links__link-container">
         <div>Github</div>
         <div>LinkedIn</div>
@@ -70,8 +83,8 @@
     </section>
 
     <section class="styles">
-      <h2>Style me</h2>
-      <div>
+      <h2 class="styles__TITLE">Style me</h2>
+      <div class="styles__btn-container">
         <button class='btn js__brutalist'>Brutalist</button>
         <button class='btn'>Dark mode</button>
         <button class='btn'>Original</button>
