@@ -11,10 +11,10 @@
 
 <body>
   <nav class="nav">
-    <a class="nav__item" href="#">About</a>
-    <a class="nav__item" href="#">Portfolio</a>
-    <a class="nav__item" href="#">Experience</a>
-    <a class="nav__item" href="#">Elsewhere</a>
+    <a class="nav__item nav__item--about" href="#">About</a>
+    <a class="nav__item nav__item--portfolio" href="#">Portfolio</a>
+    <a class="nav__item nav__item--experience" href="#">Experience</a>
+    <a class="nav__item nav__item--elsewhere" href="#">Elsewhere</a>
 
     <img class="nav__image" src="tom.jpg" />
   </nav>
@@ -52,15 +52,21 @@
     <section class="experience">
       <h2>Experience</h2>
       <div class="job">
-        <h3 class="job__title">Web Developer</h3>
-        <div class="job__employer"><a href="#">HTMA, inc.</a></div>
+        <h3 class="job__title">Frontend Web Developer</h3>
+        <div class="job__employer"><a href="https://htmobileapps.com/" target="_blank">HTMA, inc.</a></div>
         <div class="job__duration--present">May, 2018&ndash;Present</div>
-        <div class="job__description">Built, maintained, and improved front-end code for personal finance web
-          application.</div>
+        <div class="job__description">
+          <ul>
+            <li>Built, maintained, and improved HTML, CSS, and Javascript for lead product, personal finance web
+          application Plinqit.</li>
+            <li>Oversaw implementation of new designs and interfaces for Build Skills and Edit Goal modules.</li>
+            <li>Led accessibility improvement project</li>
+          </ul>
+        </div>
       </div>
       <div class="job job--class">
         <h3 class="job__title">Front-end Bootcamp</h3>
-        <div class="job__employer"><a href="#">Grand Circus, Detroit</a></div>
+        <div class="job__employer"><a href="https://www.grandcircus.co/" target="_blank">Grand Circus, Detroit</a></div>
         <div class="job__duration--present">January 2018&ndash;March 2018</div>
         <div class="job__description">Group won demo day </div>
       </div>
@@ -70,6 +76,34 @@
       <h2 class="skills__title">Skills</h2>
       <div class="skills__chart">
 
+        <div class="skills__row">
+          <div class="skills__label">
+            Javascript
+          </div>
+          <div class="skills__bar">
+            <div class="skills__bar-fill"></div>
+          </div>
+        </div>
+
+
+        <div class="skills__row">
+          <div class="skills__label">
+            HTML
+          </div>
+          <div class="skills__bar">
+            <div class="skills__bar-fill"></div>
+          </div>
+        </div>
+
+        <div class="skills__row">
+          <div class="skills__label">
+            CSS
+          </div>
+          <div class="skills__bar">
+            <div class="skills__bar-fill"></div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -77,12 +111,15 @@
       <h2 class="links__title">Elsewhere</h2>
       <div class="links__link-container">
         <div class="links__link links__link--github">
-          <img src="github--black.png"/>
+          <a href="https://github.com/AThomasBianchi" target="_blank">
+            <img src="github--black.png"/>
+          </a>
         </div>
         <div class="links__link links__link--linkedin">
-          <img src="linkedin--blue.png"/>
+          <a href="https://www.linkedin.com/in/atbianchi/" target="_blank">
+            <img src="linkedin--blue.png"/>
+          </a>
         </div>
-        <div class="links__link links__link--strava">Strava</div>
       </div>
     </section>
 

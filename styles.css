@@ -5,7 +5,9 @@
 :root {
    --main-color: red;
    --secondary-color: green;
+   --gray: gray;
    --section-margin: 0 5%;
+   --portfolio-display: none;
 }
 
 a {
@@ -94,6 +96,12 @@ h1, h2 {
   text-align: center;
 }
 
+.nav__item--portfolio {
+  display: var(--portfolio-display);
+}
+
+
+
 .nav--sticky {
   position: fixed;
   height: 50px;
@@ -116,7 +124,7 @@ h1, h2 {
  */
 
 .portfolio {
-  display: none;
+  display: var(--portfolio-display);
 }
 
 .portfolio__items-container {
@@ -166,7 +174,34 @@ h1, h2 {
  */
 
 .skills {
-  display: none;
+  /* display: none; */
+  margin: var(--section-margin);
+}
+
+.skills__row {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.skills__label {
+  text-align: right;
+  padding-right: 5px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.skills__bar {
+  flex-grow: 3;
+  height: 30px;
+  background-color: var(--gray);
+}
+
+.skills__bar-fill {
+  width: 75%;
+  height: 30px;
+  background-color: var(--main-color);
 }
 
 
@@ -364,8 +399,9 @@ h1, h2 {
 
     height: 100%;
     width: 100%;
-    
-    display: grid;
+  
+    display: var(--portfolio-display);
+    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
