@@ -11,10 +11,11 @@
 
 <body>
   <nav class="nav">
-    <a class="nav__item nav__item--about" href="#">About</a>
-    <a class="nav__item nav__item--portfolio" href="#">Portfolio</a>
-    <a class="nav__item nav__item--experience" href="#">Experience</a>
-    <a class="nav__item nav__item--elsewhere" href="#">Elsewhere</a>
+    <div class="nav__item nav__item--about" data-dest="about">About</div>
+    <div class="nav__item nav__item--portfolio" data-dest="portfolio">Portfolio</div>
+    <div class="nav__item nav__item--experience" data-dest="experience">Experience</div>
+    <div class="nav__item nav__item--skills" data-dest="skills" >Skills</div>
+    <div class="nav__item nav__item--elsewhere" data-dest="links">Elsewhere</div>
 
     <img class="nav__image" src="tom.jpg" />
   </nav>
@@ -27,7 +28,7 @@
   </section>
 
   <main class="main">
-    <section class="about">
+    <section class="about" id="about">
       <h2 class="about__title">About Me</h2>
       <p class="about__text">I am a front-end developer based in Ann Arbor, Michigan. 
         I'm passionate about making the web work for everyone. 
@@ -35,7 +36,7 @@
       </p>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="porftolio">
       <div class="portfolio__text-container">
         <h2 class="portfolio__title">Portfolio</h2>
         <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus dicta earum laborum quod dolores
@@ -49,7 +50,7 @@
       </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experience">
       <h2>Experience</h2>
       <div class="job">
         <h3 class="job__title">Frontend Web Developer</h3>
@@ -72,7 +73,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2 class="skills__title">Skills</h2>
       <div class="skills__chart">
 
@@ -84,7 +85,6 @@
             <div class="skills__bar-fill"></div>
           </div>
         </div>
-
 
         <div class="skills__row">
           <div class="skills__label">
@@ -104,10 +104,28 @@
           </div>
         </div>
 
+        <div class="skills__row">
+          <div class="skills__label">
+            React
+          </div>
+          <div class="skills__bar">
+            <div class="skills__bar-fill"></div>
+          </div>
+        </div>
+
+        <div class="skills__row">
+          <div class="skills__label">
+            jQuery
+          </div>
+          <div class="skills__bar">
+            <div class="skills__bar-fill"></div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="links">
+    <section class="links" id="links">
       <h2 class="links__title">Elsewhere</h2>
       <div class="links__link-container">
         <div class="links__link links__link--github">

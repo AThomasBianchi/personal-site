@@ -27,6 +27,31 @@
     }
 
     /*
+    * Navigation 
+    */
+
+    const navItems = document.querySelectorAll('.nav__item');
+
+    navItems.forEach( (item) => {
+        item.addEventListener('click', (e) => {
+            console.log(e.target.dataset.dest);
+            window.scrollTo({
+                top: getHeight(e.target.dataset.dest) - 50,
+                left: 0,
+                behavior: "smooth",
+            });
+        });
+    });
+
+    function getHeight(target) {
+        return document.getElementById(target).offsetTop;
+    }
+
+
+
+
+
+    /*
      * Style Buttons
      */
     const buttons = document.querySelectorAll('.btn');
@@ -57,6 +82,10 @@
         }
         target.classList.add('btn--active');
     }
+
+
+
+
 
     /*
      ! Albert Thomas Stuff
