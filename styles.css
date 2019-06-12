@@ -11,6 +11,24 @@
    --skills-display: none;
 }
 
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+
 a {
   text-decoration: none;
   color: unset;
@@ -26,6 +44,10 @@ body {
 h1, h2 {
   text-align: center;
   margin-top: 5vh;
+}
+
+h1 span {
+  word-break: inherit;
 }
 
 .image {
@@ -70,13 +92,17 @@ h1, h2 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .landing__title { order: 1;}
 .landing__image { order: 2;}
 .landing__subtitle { order: 3;}
 
-
+.landing__image {
+  max-height: 40vh;
+  max-width: 40vh;
+}
 
 /*
  * Navigation
@@ -127,37 +153,10 @@ h1, h2 {
 
 
 
-/*
- * Portfolio
- */
-
-.portfolio {
-  display: var(--portfolio-display);
-}
-
-.portfolio__items-container {
-  height: 100%;
-}
-
-.portfolio__item {
-  width: 100%;
-  max-height: 100%;
-  min-height: 200px;
-}
-
-.orange { background-color: orange;}
-.blue { background-color: blue;}
-.green { background-color: green;}
-
-
 
 /*
  * Experience
  */
-
-/* .experience {
-  margin: var(--section-margin);
-} */
 
 
 .jobs {
@@ -181,71 +180,23 @@ h1, h2 {
 }
 
 
-
-/*
- * Skills
- */
-
-.skills {
-  display: var(--skills-display);
-  margin: var(--section-margin);
-}
-
-.skills__row {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.skills__label {
-  text-align: right;
-  padding-right: 5px;
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
-.skills__bar {
-  flex-grow: 3;
-  height: 30px;
-  background-color: var(--gray);
-}
-
-.skills__bar-fill {
-  width: 75%;
-  height: 30px;
-  background-color: var(--main-color);
-}
-
-
-
 /*
  * Links
  */
 
 .links__link-container {
   display: flex;
-  justify-content: space-evenly
+  justify-content: center;
 }
 
 .links__link {
-  width: 25%;
+  width: 12%;
+  margin: 2%;
 }
 
 .links__link img {
   width: 100%;
 }
-
-
-
-/*
- * Style Buttons
- */
-
-.styles {
-  display: none;
-}
-
 
 
 
@@ -304,62 +255,6 @@ h1, h2 {
     align-self: start;
   }
 
-
-
-  /*
-   ! Albert Thomas Display
-  .a {
-    background-color: #fff;
-    display: inline-block;
-    transition: all 1s ease;
-    z-index: 1;
-  }
-
-  .lbert {
-    color: red;
-    display: inline-block;
-    transition: all 1s ease;
-
-  }
-
-  .lbert--moved {
-    transform: translateX(-56px);
-    z-index: -1;
-  }
-
-  .t {
-    background-color: #fff;
-    display: inline-block;
-    transition: all 1s ease;
-    z-index: 0;
-  }
-
-  .t--moved {
-    background-color: #fff;
-    transform: translateX(-62px);
-  }
-
-  .homas {
-    display: inline-block;
-    color: green;
-    transition: all 1s ease;
-  }
-
-  .homas--moved {
-    transform: translateX(-140px);
-    z-index: -1;
-  }
-
-  .bianchi {
-    background-color: #fff;
-    display: inline-block;
-    transition: all 1s ease;
-  }
-
-  .bianchi--moved {
-    transform: translateX(-137px);
-  }
-  */
 
 
   /*
