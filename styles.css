@@ -43,7 +43,7 @@ body {
 
 h1, h2 {
   text-align: center;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
 }
 
 h1 span {
@@ -67,6 +67,7 @@ h1 span {
 .section__title {
   background-color: var(--gray);
   color: white;
+  margin-top: 5vh;
 }
 
 
@@ -225,7 +226,7 @@ h1 span {
 
   .landing {
     display: grid;
-    grid-template-columns: 10% 1fr 1.5fr 10%;
+    grid-template-columns: 10% 1fr 1fr 10%;
     grid-template-rows: 10% 1fr 1fr 10%;  
   }
 
@@ -235,6 +236,7 @@ h1 span {
     grid-row-start: 2;
     grid-row-end: 4;
     align-self: center;
+    justify-self: end;
   }
 
   .landing__title {
@@ -268,6 +270,7 @@ h1 span {
     width: 100%;
     background-color: grey;
     justify-content: flex-end;
+    display: none;
   }
 
   .nav__item {
@@ -291,15 +294,15 @@ h1 span {
   .main {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 10% repeat(4, 1fr) 10%;
-    grid-template-rows: repeat(4, 25vh);
+    grid-template-columns: 5% repeat(4, 1fr) 5%;
+    grid-template-rows: 1fr 1fr;
   }
 
   .main--scrolled {
     margin-top: 150px;
   }
 
-  .portfolio {
+  /* .portfolio {
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -310,11 +313,12 @@ h1 span {
   
     display: var(--portfolio-display);
     /* display: grid; */
+    /*
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-  }
+  } */
 
-  .portfolio__text-container {
+  /* .portfolio__text-container {
     grid-column: 1 / 2;
   }
 
@@ -326,29 +330,43 @@ h1 span {
 
   .portfolio__item {
     margin: 10px;
-  }
+  } */
 
 
   .about {
-    grid-column: 2 / span 2;
+    grid-column: 5 / span 1;
     grid-row: 1 / span 1;
   }
 
   .links {
-    grid-column: 4 / span 2;
-    grid-row: 1 / span 1;
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 1;
   }
 
-
-
   .experience {
-    grid-column: 2 / span 4;
-    grid-row: 2 / span 2;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
   }
 
   .styles {
     grid-column: 2 / span 4;
     grid-row: 4 / span 1;
+  }
+
+  .jobs {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .job {
+    margin-top: 0;
+    width: 45%;
+    padding: 0 5%;
+    border-right: grey solid 1px; 
+  }
+
+  .job:last-of-type {
+    border: none;
   }
 
 
