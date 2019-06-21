@@ -5,9 +5,11 @@
      */
 
     window.onscroll = () => {checkScroll()};
+    document.addEventListener("touchmove", checkScroll);
+
 
     function checkScroll() {
-        const height = document.documentElement.clientHeight;
+        const height = document.documentElement.clientHeight - 100;
         let scrollHeight = document.documentElement.scrollTop;
         if (scrollHeight > height) {
             freezeNav();
@@ -34,7 +36,6 @@
 
     navItems.forEach( (item) => {
         item.addEventListener('click', (e) => {
-            console.log(e.target.dataset.dest);
             window.scrollTo({
                 top: getHeight(e.target.dataset.dest) - 50,
                 left: 0,
