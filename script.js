@@ -11,7 +11,7 @@
     function checkScroll() {
         const height = document.documentElement.clientHeight - 160;
         let scrollHeight = document.documentElement.scrollTop;
-        alert ('height: ', height, 'scrollHeight: ', scrollHeight);
+        alert ('height: ' + height + ', scrollHeight: ' + scrollHeight);
         if (scrollHeight > height) {
             freezeNav();
         } else {
