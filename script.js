@@ -9,7 +9,6 @@
 
 
     function checkScroll() {
-        alert('scroll');
         const height = document.documentElement.clientHeight - 100;
         let scrollHeight = document.documentElement.scrollTop;
         if (scrollHeight > height) {
@@ -20,6 +19,7 @@
     }
 
     function freezeNav() {
+        alert('freeze nav');
         document.querySelector('.nav').classList.add('nav--sticky');
         document.querySelector('.main').classList.add('main--scrolled');
     }
