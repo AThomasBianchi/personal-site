@@ -5,7 +5,7 @@
      */
 
     window.onscroll = () => {checkScroll()};
-    // document.addEventListener("touchmove", checkScroll);
+    document.addEventListener("touchmove", checkScroll);
 
 
     function checkScroll() {
