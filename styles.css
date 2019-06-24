@@ -86,7 +86,7 @@ h1 span {
  */
 
 .landing {
-  height: calc(100vh - 140px);
+  height: calc(100vh - 160px);
   order: -1;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ h1 span {
   justify-content: space-evenly;
   align-items: center;
   transition: height .2s ease;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .nav__image {

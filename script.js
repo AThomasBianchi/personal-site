@@ -9,6 +9,7 @@
 
 
     function checkScroll() {
+        alert('scroll');
         const height = document.documentElement.clientHeight - 100;
         let scrollHeight = document.documentElement.scrollTop;
         if (scrollHeight > height) {
