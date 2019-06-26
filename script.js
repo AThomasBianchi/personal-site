@@ -1,17 +1,17 @@
-(function() {
+(function () {
 
     /*
-     * Movile Navigation Collapse
+     * Desktop Navigation Collapse
      */
 
-    window.onscroll = () => {checkScroll()};
-    document.addEventListener("touchmove", checkScroll);
+    window.onscroll = () => {
+        checkScroll()
+    };
 
 
     function checkScroll() {
         const height = document.documentElement.clientHeight - 160;
         let scrollHeight = document.documentElement.scrollTop;
-        document.querySelector('.scroll_check').innerHTML = `height: ${height}, scrollHeight: ${scrollHeight}`;
         if (scrollHeight > height) {
             freezeNav();
         } else {
@@ -30,12 +30,12 @@
     }
 
     /*
-    * Navigation 
-    */
+     * Navigation 
+     */
 
     const navItems = document.querySelectorAll('.nav__item');
 
-    navItems.forEach( (item) => {
+    navItems.forEach((item) => {
         item.addEventListener('click', (e) => {
             window.scrollTo({
                 top: getHeight(e.target.dataset.dest) - 50,
