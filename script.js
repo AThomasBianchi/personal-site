@@ -42,11 +42,41 @@
                 left: 0,
                 behavior: "smooth",
             });
+            hideNav();
         });
     });
 
     function getHeight(target) {
         return document.getElementById(target).offsetTop;
+    }
+
+
+    /*
+     * Navigation Menu
+     */
+
+    const navIcon = document.querySelector('.nav__menu-icon');
+
+    navIcon.addEventListener('click', () => {
+        console.log('click');
+        checkNav();
+    });
+
+    function checkNav() {
+        const navDrop = document.querySelector('.nav__drop');
+        if (navDrop.classList.contains('nav__drop--hidden')) {
+            displayNav()
+        } else {
+            hideNav()
+        }
+    }
+
+    function displayNav() {
+        document.querySelector('.nav__drop').classList.remove('nav__drop--hidden');
+    }
+
+    function hideNav() {
+        document.querySelector('.nav__drop').classList.add('nav__drop--hidden');
     }
 
 })();

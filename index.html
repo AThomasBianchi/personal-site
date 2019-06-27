@@ -5,20 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AT Bianchi</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" type="text/css">
+
 </head>
 
 <body>
 
   <nav class="nav">
-    <div>
+    <div class="nav__drop nav__drop--hidden">
       <div class="nav__item nav__item--about" data-dest="about">About</div>
       <div class="nav__item nav__item--portfolio" data-dest="portfolio">Portfolio</div>
       <div class="nav__item nav__item--experience" data-dest="experience">Experience</div>
       <div class="nav__item nav__item--skills" data-dest="skills">Skills</div>
       <div class="nav__item nav__item--elsewhere" data-dest="links">Elsewhere</div>
     </div>
-    <div class="nav__menu-icon">X</div>
+      <i class="material-icons nav__menu-icon">
+        menu
+      </i>
+
   </nav>
 
   <section class="landing">

@@ -123,12 +123,29 @@ h1 span {
   background-color: var(--gray);
 }
 
+.nav__drop {
+  position: absolute;
+  background: lightblue;
+  top: 50px;
+  height: 69px;
+  transition: height .3s ease-out;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav__drop--hidden {
+  height: 0;
+}
+
 .nav__menu-icon {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
   width: 50px;
+  font-size: 45px;
+  color: white;
+  line-height: 50px;
 }
 
 
