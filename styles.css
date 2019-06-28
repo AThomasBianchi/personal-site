@@ -86,7 +86,8 @@ h1 span {
  */
 
 .landing {
-  height: 100vh;
+  height: calc(100vh - 100px);
+  margin-top: 50px;
   order: -1;
   display: flex;
   flex-direction: column;
@@ -109,32 +110,28 @@ h1 span {
  */
 
 .nav {
-  /* height:  100px;
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  transition: height .2s ease;
-  padding-bottom: 60px; */
   position: fixed;
   height: 50px;
   width: 100%;
   background-color: var(--gray);
+  border-bottom: var(--secondary-color) solid 4px;
+  box-sizing: border-box;
 }
 
 .nav__drop {
   position: absolute;
   background: lightblue;
   top: 50px;
-  height: 69px;
-  transition: height .3s ease-out;
   width: 100%;
   overflow: hidden;
+  transition: max-height .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  max-height: 50vh;
 }
 
 .nav__drop--hidden {
-  height: 0;
+  max-height: 0;
 }
 
 .nav__menu-icon {
@@ -146,14 +143,28 @@ h1 span {
   font-size: 45px;
   color: white;
   line-height: 50px;
+  cursor: pointer;
 }
 
-
 .nav__item {
-  color: white;
+  color: var(--main-color);
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+.nav__item:first-of-type {
+  padding-top: 15px;
+}
+
+.nav__item:last-of-type {
+  padding-bottom: 15px;
+}
+
+.nav__item:hover {
+  color: var(--secondary-color);
 }
 
 .nav__item--portfolio {
@@ -168,6 +179,15 @@ h1 span {
   position: fixed;
   height: 50px;
   padding-bottom: 0px;
+}
+
+.transition {
+  height: 50px;
+  background: linear-gradient(white, var(--gray));
+}
+
+main .section__title:first-of-type {
+  margin-top: 0;
 }
 
 

@@ -73,10 +73,12 @@
 
     function displayNav() {
         document.querySelector('.nav__drop').classList.remove('nav__drop--hidden');
+        document.querySelector('.nav__menu-icon').innerText = 'close';
     }
 
     function hideNav() {
         document.querySelector('.nav__drop').classList.add('nav__drop--hidden');
+        document.querySelector('.nav__menu-icon').innerHTML = 'menu';
     }
 
 })();
