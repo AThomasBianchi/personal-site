@@ -9,25 +9,25 @@
     };
 
 
-    function checkScroll() {
-        const height = document.documentElement.clientHeight - 160;
-        let scrollHeight = document.documentElement.scrollTop;
-        if (scrollHeight > height) {
-            freezeNav();
-        } else {
-            unfreezeNav();
-        }
-    }
+    // function checkScroll() {
+    //     const height = document.documentElement.clientHeight - 160;
+    //     let scrollHeight = document.documentElement.scrollTop;
+    //     if (scrollHeight > height) {
+    //         freezeNav();
+    //     } else {
+    //         unfreezeNav();
+    //     }
+    // }
 
-    function freezeNav() {
-        document.querySelector('.nav').classList.add('nav--sticky');
-        document.querySelector('.main').classList.add('main--scrolled');
-    }
+    // function freezeNav() {
+    //     document.querySelector('.nav').classList.add('nav--sticky');
+    //     document.querySelector('.main').classList.add('main--scrolled');
+    // }
 
-    function unfreezeNav() {
-        document.querySelector('.nav').classList.remove('nav--sticky');
-        document.querySelector('.main').classList.remove('main--scrolled');
-    }
+    // function unfreezeNav() {
+    //     document.querySelector('.nav').classList.remove('nav--sticky');
+    //     document.querySelector('.main').classList.remove('main--scrolled');
+    // }
 
     /*
      * Navigation 
