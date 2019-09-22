@@ -1,5 +1,4 @@
 * {
-  /* background-color: #F2F2F2; */
   margin: 0;
   padding: 0;
 }
@@ -17,7 +16,6 @@
   --header-margin: 5vh;
   --header-padding: 2vw;
   --hi-height: calc(34vh + var(--img-width) * 1.072 - var(--img-width) * 1.072 / 100 * 64);
-
 }
 
 body {
@@ -30,13 +28,11 @@ a {
 }
 
 a:link {
-  /* color: var(--light-main); */
   color: var(--main-color);
 
 }
 
 a:visited {
-  /* color: var(--main-color); */
   color: var(--light-main);
 
 }
@@ -45,19 +41,16 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* height: calc(100vh + var(--img-width) * .40); */
 }
 
 .name {
   color: white;
   text-align: left;
-  /* margin-top: var(--header-margin); */
   background-color: var(--main-color);
   height: 39vh;
 }
 
 .title {
-  /* color: var(--main-grey); */
   color: var(--main-color);
   background-color: #000;
   text-align: right;
@@ -73,7 +66,6 @@ header {
   line-height: var(--big-font-leading);
   padding: 0 var(--header-padding);
   display: flex;
-  /* height: 33vh; */
   align-items: center;
   overflow: hidden;
 }
@@ -95,8 +87,6 @@ header {
   font-weight: 900;
   color: var(--main-color);
   font-size: var(--med-font);
-  /* transform: translateX(calc(var(--img-width) / 2 * -1)) translateY(calc(var(--img-width) * -1)); */
-  /* opacity: 0; */
   top: 10vh;
   left: 10vw;
 }
@@ -109,49 +99,86 @@ header {
 }
 
 
-.about_me {
+.about-me {
   font-size: 6vw;
 }
 
-.about_me p {
+.about-me p {
   padding: 5vh 5vw;
 }
 
-.left {
+.about-me__summary {
   text-align: left;
 }
 
-.right {
+.about-me__connect {
   text-align: right;
   background-color: black;
   color: white;
 }
 
-/* ----- animation ----- */
-/* .delay {
-  -webkit-animation: delay 1s cubic-bezier(0.2, 0.6, 0.2, 1);
-  -moz-animation: delay 1s cubic-bezier(0.2, 0.6, 0.2, 1);
-  animation: delay 1s cubic-bezier(.59, .01, .28, 1);
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+@media screen and (min-width: 768px) {
+
+  header {
+    height: 85vh;
+    display: block;
+  }
+
+  .name,
+  .title,
+  .tom_hi {
+    font-size: calc(66px + 1vw);
+    line-height: calc(61px + 1vw);
+    display: unset;
+    height: unset;
+    background-color: unset;
+    color: unset;
+    padding: unset;
+    text-align: unset;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    color: var(--main-color);
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateX(108px);
+  }
+
+  .tom_hi {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 50%;
+    width: 25%;
+    max-width: 210px;
+  }
+
+  .tom {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .about-me {
+    font-size: 2.5rem;
+  }
+
+  .about-me p {
+    padding: 10vh 10vw;
+  }
 }
-
-@-webkit-keyframes delay {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes delay {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
